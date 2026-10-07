@@ -25,7 +25,7 @@ CONSTRAINTS_MIN = float(os.getenv("CONSTRAINTS_MIN", "0.5")) # below this, a pro
 OKF_DIR = Path(os.getenv("OKF_DIR", ROOT / "okf"))
 DATA_DIR = Path(os.getenv("DATA_DIR", APP_DIR / "data"))     # uploads and generated images
 PRELOAD_TRANSCRIPT = os.getenv("PRELOAD_TRANSCRIPT", "")     # e.g. transcripcion_respaldo.json
-PRELOAD_CLIENT = os.getenv("PRELOAD_CLIENT", "ritmofit")
+PRELOAD_CLIENT = os.getenv("PRELOAD_CLIENT", "cliente")
 
 # Server
 HOST = os.getenv("HOST", "127.0.0.1")

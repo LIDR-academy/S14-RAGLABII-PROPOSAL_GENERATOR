@@ -11,15 +11,15 @@ from .transcripts import add_call, load_segments
 
 # Golden set: inputs stay in Spanish, as the sales team would write them
 GOLDEN = [
-  {"input": "Genera la propuesta para RitmoFit: plataforma de recomendaciones en tiempo real.",
+  {"input": "Genera la propuesta para el cliente: plataforma de recomendaciones en tiempo real.",
    "type": "proposal"},
   {"input": "¿Cuánto cuesta un Well-Architected Review?", "type": "direct_answer"},
-  {"input": "¿Cuál es el presupuesto de RitmoFit para la fase 1?", "type": "direct_answer"},
+  {"input": "¿Cuál es el presupuesto del cliente para la fase 1?", "type": "direct_answer"},
   {"input": "¿Pueden operar la plataforma cada mes después del MVP?", "type": "direct_answer"},
-  {"input": "Cotiza una migración a Azure para RitmoFit", "type": "out_of_catalog"},
+  {"input": "Cotiza una migración a Azure para el cliente", "type": "out_of_catalog"},
 ]
 
-# Same questions as the guardrail, with RitmoFit's constraints spelled out
+# Same questions as the guardrail, with the demo call's constraints spelled out
 EVAL_QUESTIONS = {**QUESTIONS, "constraints_ok": {"type": "noul",
     "instructions": "Does the answer respect the client's constraints in the transcript: managed services without Kubernetes, a budget of USD 25,000 and an MVP in 10 weeks?"}}
 

@@ -4,7 +4,7 @@ Guidance for coding agents working in this repo.
 
 ## What this is
 
-A teaching lab (Spanish-speaking course) that builds a technical sales proposal generator for NubeAndina Consulting, a fictional AWS consultancy. Pipeline: client call → Whisper transcript in FAISS → agent reads the OKF knowledge base by path → Jev typed checks as evals and inline guardrail → architecture diagram (`diagrams`) and slide (`gpt-image-2.5-flare`). Demo client: RitmoFit (fictional).
+A teaching lab (Spanish-speaking course) that builds a technical sales proposal generator for NubeAndina Consulting, a fictional AWS consultancy. Pipeline: client call → Whisper transcript in FAISS → agent reads the OKF knowledge base by path → Jev typed checks as evals and inline guardrail → architecture diagram (`diagrams`) and slide (`gpt-image-2.5-flare`).
 
 The same logic exists in three places:
 

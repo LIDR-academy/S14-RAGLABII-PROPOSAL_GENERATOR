@@ -2,7 +2,7 @@
 
 A lab that builds, on top of a RAG with Flask + chat + a ReAct agent, an internal tool for the sales team of **NubeAndina Consulting** (a fictional AWS consultancy). After a discovery call, the tool transcribes the call, checks the catalog and delivers a proposal with architecture and pricing, reviewed by guardrails and accompanied by a diagram and a slide.
 
-Example case: **RitmoFit**, a fictional connected-fitness company, inspired by [Peloton's real-time recommendations architecture on AWS](https://www.youtube.com/watch?v=ym_Gz_zH7w8).
+The demo call is inspired by [Peloton's real-time recommendations architecture on AWS](https://www.youtube.com/watch?v=ym_Gz_zH7w8).
 
 | Stage | What it does | Technology |
 | --- | --- | --- |
@@ -20,9 +20,8 @@ labii_propuestas_aws.ipynb   Lab notebook (Colab)
 snippets/                    Each notebook code cell, numbered in execution order
 app/                         App version (local, no Colab)
 okf/  ·  okf.zip             NubeAndina's OKF knowledge base (24 files)
-transcripcion_respaldo.json  Backup transcript of the RitmoFit call
+transcripcion_respaldo.json  Backup transcript of the demo call
 llamadanubeandina.mp3        Call audio
-guion_llamada_ritmofit.md    Call script and client constraints
 raglab.ipynb · whispr.ipynb  Base notebooks from previous sessions
 ```
 
@@ -47,7 +46,7 @@ cp app/.env.example app/.env        # and fill in OPENAI_API_KEY and JEV_API_KEY
 python -m app                       # opens http://127.0.0.1:5002
 ```
 
-With `PRELOAD_TRANSCRIPT=transcripcion_respaldo.json` (the default in `.env.example`), the RitmoFit call is already indexed at startup: ask directly for *"Genera la propuesta para RitmoFit: plataforma de recomendaciones en tiempo real."*
+With `PRELOAD_TRANSCRIPT=transcripcion_respaldo.json` (the default in `.env.example`), the demo call is already indexed at startup: ask directly for *"Genera la propuesta para el cliente: plataforma de recomendaciones en tiempo real."*
 
 What happens on each message (everything is logged to the terminal):
 
@@ -71,4 +70,4 @@ All variables are in `app/.env.example`: models (`MODEL`, `EFFORT`, `IMAGE_MODEL
 
 ## Notes
 
-- NubeAndina, RitmoFit and their data are fictional. The AWS costs in the OKF are **illustrative**; always validate with the AWS Pricing Calculator.
+- NubeAndina, the demo client and their data are fictional. The AWS costs in the OKF are **illustrative**; always validate with the AWS Pricing Calculator.

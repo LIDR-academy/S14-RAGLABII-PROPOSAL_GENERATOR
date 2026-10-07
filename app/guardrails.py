@@ -12,7 +12,7 @@ log = logging.getLogger("nubeandina")
 
 CTX_CHARS = 4000          # cap each tool result sent to Jev
 
-# Constraints are generic (any client); the eval set in evals.py swaps in RitmoFit's
+# Constraints are generic (any client); the eval set in evals.py swaps in the demo call's
 QUESTIONS = {
   "type": {"type": "choice",
     "instructions": "What type of answer did the agent give?",
